@@ -2,6 +2,7 @@ package hw1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Methods {
     public static void main(String[] args) {
@@ -22,11 +23,12 @@ public class Methods {
         arr[b] = c;
     }
 
-    public static ArrayList toArrayList(Object[] arr){
-        ArrayList<Object> arrayList = new ArrayList<>(arr.length);
-        for (Object o:arr) {
-            arrayList.add(o);
-        }
+    public static List toArrayList(Object[] arr){
+        List<Object> arrayList = Arrays.asList(arr);
+//        ArrayList<Object> arrayList = new ArrayList<>(arr.length);
+//        for (Object o:arr) {
+//            arrayList.add(o);
+//        }
         //System.out.println(arrayList.get(0).getClass());
         return arrayList;
     }
